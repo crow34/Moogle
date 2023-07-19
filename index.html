@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta resultset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | iFlix</title>
+    <script src="https://kit.fontawesome.com/9ff6517bd7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./manualimages/logoC1.jpg">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="/CSS/index2.css">
+    <link rel="stylesheet" href="/CSS/iFlixBanner.css">
+    <link rel="stylesheet" href="./CSS/searchbar.css">
+  </head>
+  <html>
+<body>
+<div id="navbar">
+    <div id="subNavbar">
+      <div class="iFlix">
+      <img src="./manualimages/logoC1.jpg" class="iFlixlogo">
+      <span id="logoheading">iFlix</span>
+     </div>
+     <div id="SearchSection">
+          <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Enter Movie Name..." id="movieInput">
+      </div>
+    </div>
+  </div>
+  <!-- Sidebar -->
+<main>
+  <div class="container" onclick="myFunction(this)">
+    <div class="hamburger">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    </div>
+  <nav class="sidebar" sidebar></nav>
+  <div class="overlay" overlay menu-toggler>
+  </div>
+  </div>
+</main>
+  <!--Search result-->
+  <div id="result_detail">
+    <div id="showingResult"></div>
+  <div id="search_result">
+    <a href="detail.html" class="btn" onclick="getMovieDetail()">
+      <img id="search_image" src="">
+      </a>
+  </div>
+  <div id="noResult"></div>
+  </div>
+  <div id="main_container">
+  <!--background banner-->
+  <div class="background">
+</div>
+  <!--Trending-->
+  <div class="cardsbar">
+    <h1>Trending Movies!</h1>
+    <div class="wrap">
+      <div class="box">
+        <div class="box_top">
+          <a href="detail.html" class="btn" onclick="getMovieDetail()">
+          <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+          </a>
+          <div class="movie-overlay">
+            <div class="title-flex">
+              <h3 class="box-title"></h3>
+          </div>
+            <div class="overview"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box_top">
+          <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+          <div class="title-flex">
+            <h3 class="box-title"></h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box_top">
+          <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+          <div class="title-flex">
+            <h3 class="box-title"></h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box_top">
+          <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+          <div class="title-flex">
+            <h3 class="box-title"></h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box_top">
+          <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+          <div class="title-flex">
+            <h3 class="box-title"></h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box_top">
+          <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+          <div class="title-flex">
+            <h3 class="box-title"></h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box_top">
+          <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+          <div class="title-flex">
+            <h3 class="box-title"></h3>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box_top">
+          <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+          <div class="title-flex">
+            <h3 class="box-title"></h3>
+  
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box_top">
+          <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+          <div class="title-flex">
+            <h3 class="box-title"></h3>
+            
+          </div>
+        </div>
+        
+      </div>
+      <div class="box">
+        <div class="box_top">
+          <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+          <div class="title-flex">
+            <h3 class="box-title"></h3>
+          </div>
+        </div>
+      </div>
+  <div class="box">
+    <div class="box_top">
+      <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+      <div class="title-flex">
+        <h3 class="box-title"></h3>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box_top">
+      <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+      <div class="title-flex">
+        <h3 class="box-title"></h3>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box_top">
+      <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+      <div class="title-flex">
+        <h3 class="box-title"></h3>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box_top">
+      <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+      <div class="title-flex">
+        <h3 class="box-title"></h3>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box_top">
+      <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+      <div class="title-flex">
+        <h3 class="box-title"></h3>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box_top">
+      <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+      <div class="title-flex">
+        <h3 class="box-title"></h3>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box_top">
+      <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+      <div class="title-flex">
+        <h3 class="box-title"></h3>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box_top">
+      <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+      <div class="title-flex">
+        <h3 class="box-title"></h3>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box_top">
+      <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+      <div class="title-flex">
+        <h3 class="box-title"></h3>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box_top">
+      <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+      <div class="title-flex">
+        <h3 class="box-title"></h3>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box_top">
+      <img class="box-image" src="./manualimages/image-solid.svg" alt="">
+      <div class="title-flex">
+        <h3 class="box-title"></h3>
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+<!--Top Rated Movies-->
+  <div class="flexdirection">
+    <div class="heading"><h1>Top Rated Movies!</h1></div>
+    <div class="popularMovies">
+  <div class="box_top1">
+    <a href="detail.html" class="btn" onclick="getMovieDetail()">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+    </a>
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+  <div class="box_top1">
+    <img class="box-image1" src="./manualimages/image-solid.svg">
+  </div>
+ </div>
+</div>
+<!--Upcoming Movies-->
+<div class="flexdirectionUp">
+  <div class="headingUp"><h1>Upcoming Movies!</h1></div>
+  <div class="popularMoviesUp">
+<div class="box_top1Up">
+  <a href="detail.html" class="btn" onclick="getMovieDetail()">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </a>
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+<div class="box_top1Up">
+  <img class="box-image1Up" src="./manualimages/image-solid.svg">
+  </div>
+</div>
+</div>
+ <!--Free To Watach-->
+ <div class="heading1"><h1>Free to Watch</h1></div>
+<div class="scrollbar">
+    <div class="freeWatch">
+
+      <div class="box_top2">
+        <a href="detail.html" class="btn" onclick="getMovieDetail()">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+        </a>
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+      <div class="box_top2">
+        <img class="box-image2" src="./manualimages/image-solid.svg">
+      </div>
+    </div>
+    </div>
+    </div>
+ </body>
+    <script>  
+    function myFunction(burger) {
+      burger.classList.toggle("change");
+      burger.classList.toggle('filters')
+    }
+    </script>
+  <script src="JavaScript/iFlix.js"></script>
+  <script src="JavaScript/banner.js"></script>
+  <script src="./JavaScript/global.js" defer></script>
+  <script src="./JavaScript/searchbar.js" type="module"></script>
+  <script type="module" src="./JavaScript/movie-list.js"></script>
+    </html>
