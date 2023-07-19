@@ -1,0 +1,271 @@
+
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #0c0c0d;
+    color: white;
+    overflow-x: hidden;
+  }
+  body::-webkit-scrollbar {  
+    width: 0.5rem;
+    background-color: rgb(42, 47, 48);
+    color: white;
+    border-radius: 4rem;
+    transition: 0.5s;
+  }
+  
+  .main_container {
+    margin-top: -24rem;
+  }
+  
+  .iFlix {
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    margin-left: 3.6rem;
+  
+  }
+  .iFlixlogo{
+    height: 3rem;
+    border-radius: 6px;
+  }
+  
+  #iFlixfont {
+    font-size: 45px;
+  }
+  
+  #logoheading {
+    font: 30px;
+    font-size: 28px;
+    /* display: flex; */
+    /* align-items: center; */
+    font-size: 31px;
+    font-weight: bold;
+    font-family: ui-monospace;
+  }
+  
+  /*Section Nvbar 1*/
+  #subNavbar {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    height: 3rem;
+    border-bottom: 1px solid #111111;
+  }
+  
+  #navbar {
+    position: sticky;
+    top: 0px;
+    background-color: #0c0c0d;
+    z-index: 99;
+    height: 3rem;
+  }
+  
+  li,
+  a {
+    list-style: none;
+    margin-right: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    color: black;
+  }
+  
+  ul {
+    display: flex;
+  
+  }
+  
+  #SearchSection {
+    margin: auto;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  #movieInput {
+    padding: 0.8rem;
+    width: 20rem;
+    border-radius: 0.4rem;
+    text-indent: 16px;
+    background-color: #342b2b;
+    color: white;
+    font-size: 0.9rem;
+    border: 1px solid #5d49a9;
+    box-shadow: 1px 1px 1px 1px blue;
+    font-family: sans-serif;
+  }
+  
+  
+  #btn {
+    background-color: rgb(204, 0, 103);
+    color: rgb(232, 230, 227);
+    border-color: initial;
+    box-shadow: rgba(204, 0, 104, 0.5) 0px 2px 25px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+  
+  }
+  
+  .fa-magnifying-glass {
+    position: absolute;
+  
+    margin-left: 8px;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  
+  /* Top rated and trending*/
+  .cardsbar {
+    margin-top: 12rem;
+  }
+  h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.7;
+    font-weight: 300;
+    color: var(--text-gray);
+  }
+  
+  
+  
+  .description {
+    white-space: wrap;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .wrap {
+    display: flex;
+    align-items: stretch;
+    padding: 24px;
+    overflow-x: scroll;
+  
+  }
+  
+  .wrap::-webkit-scrollbar {
+  
+    height: 0.5em;
+    background-color: rgb(29, 26, 26);
+    width: 1rem;
+    box-shadow: inset 0 0 2px rgba(65, 53, 53, 0.3);
+    border-radius: 4rem;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    position: relative;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .box_top {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 0px;
+    margin-bottom: 3px;
+  }
+  
+  .box-image {
+  
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    margin: auto;
+    border-radius: 0.5rem;
+    margin-top: -14px;
+  
+  }
+  
+  .box-image:hover {
+    filter: brightness(0.3);
+   
+  }
+  .rating{
+    text-align: center;
+    float: right;
+    font-weight: bold;
+    margin-top: 0.7rem;
+    
+  }
+  .release_date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border: 2px solid black;
+    width: 41px;
+    font-weight: bold;
+    color: white;
+    background: #142019;
+    border-radius: 5px;
+    height: 20px;
+    border-top-left-radius: 0px;
+    font-family: cursive;
+    margin-top: 0.7rem;
+    margin-left: 0.7em;
+    align-items: center;
+  }
+  .rating .fas.fa-star {
+    color: yellow;
+  }
+  
+  
+  h1 {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 0rem;
+  }
+  
+  
+  .box-title {
+    border-left: 3px solid var(--purple);
+    padding-left: 5px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+  
+  }
+  
+  .user-follow-info {
+    color: hsl(0, 0%, 60%);
+    margin-left: 17px;
+  }
+  
+  .button {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 0px;
+    margin-bottom: -17px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+    padding: 16px;
+    color: #000;
+    background: transparent;
+    box-shadow: 0px 0px 0px 1px black inset;
+    transition: background 0.4s ease;
+    width: 16rem;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  
+  /*This is the first file of iFlix second file is index2.css/

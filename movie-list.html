@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="LetsWatch" />
+    <meta name="description" content="LetsWatch is a movie recommendation app made for my project work. #CAP615"
+    />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg" />
+    <script src="https://kit.fontawesome.com/9ff6517bd7.js" crossorigin="anonymous"></script>
+    <title>Discover more| iFlix</title>
+  <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/index2.css">
+    <link rel="stylesheet" href="./CSS/searchbar.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="navbar">
+      <div id="subNavbar">
+        <div class="iFlix">
+          <a href="index.html" class="logo">
+            <i class="fa-solid fa-clapperboard fa-spin-pulse fa-2xl" style="color: #da0707;" id="iFlixfont"></i>
+            <span id="logoheading">iFlix</span>
+          </a>
+        </div>
+        <div id="SearchSection">
+          <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Enter Movie Name..." id="movieInput">
+        </div>
+      </div>
+      </div>
+      <main>
+        <div class="container" onclick="myFunction(this)">
+        <nav class="sidebar" sidebar></nav>
+        <div class="overlay" overlay menu-toggler>
+        </div>
+        </div>
+      </main>
+      <!--Search result-->
+      <div id="result_detail">
+        <div id="showingResult"></div>
+      <div id="search_result">
+        <a href="detail.html" class="btn" onclick="getMovieDetail()">
+          <img id="search_image" src="">
+          </a>
+      </div>
+      <div id="noResult"></div>
+      </div>
+
+    <main>
+      <!-- Sidebar -->
+      <nav class="sidebar" sidebar></nav>
+      <div class="overlay" overlay menu-toggler>  
+      <article class="container_content" page-content>
+      </article>
+    </main>
+  </body>
+      <script src="./JavaScript/global.js" defer></script>
+      <script src="./JavaScript/movie-list.js" type="module"></script>
+      <script src="./JavaScript/searchbar.js" type="module"></script>
+      <script src="./JavaScript/movie-card.js" type="module"></script>
+</html>

@@ -1,0 +1,133 @@
+#MoviesBanners{
+    background-size :cover;
+    box-sizing :border-box;
+    color: rgb(15, 18, 19);
+color-scheme :dark light;
+display: block;
+font-family : "Space Grotesk", sans-serif;
+font-size :16px;
+font-weight : 400;
+height : 602.688px;
+line-height: 24px;
+max-width: 100%;
+min-height: 602.7px;
+padding-top :80px;
+position: absolute;
+text-align :left;
+top :55px;
+width :100%;
+-webkit-tap-highlight-color :rgba(0, 0, 0, 0);
+border-top: 2px solid #1c1a1a;
+}
+.collectionBD {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    max-width: 324px;
+    height: 4rem;
+    margin-left: 4rem;
+    margin-top: 7rem; 
+}
+.banner_fadeBottom {
+    height: 10rem;
+    background: linear-gradient(180deg, transparent, rgba(37,37,37,.61), #1802023b );
+    position: absolute;
+    left: 0;
+    bottom: -0.1rem;
+    width: 100%;
+}
+.banner_fadeBottom1 {
+    height: 19rem;
+    background: linear-gradient(180deg, transparent, rgba(37,37,37,.61), #141414 );
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    border-bottom: 2px solid #1d1a1a;
+}
+.bannerOverview{
+    font-size: 17.4px;
+    color: white;
+    line-height: 1.5;
+    width: 28rem;
+    text-align: center;
+}
+.bannertitle{
+    display: inline;
+    color: white;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin: 0;
+    margin-bottom: 16px;
+    max-width: 40%;
+    font-weight: bold;
+    text-align: center;
+    font-family: Helvetica,Arial ,sans-serif;
+    text-align: center;
+    margin: auto;
+}
+.bannerReleaseDate {
+    margin-bottom: 14px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.releaseDate{
+    border: 1px solid black;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #181010;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 1.6rem;
+}
+#bannerRating{
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.buttonSection{
+    z-index: 9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn1{
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 7px;
+    padding: 0.3rem;
+    background-color: #ea1414;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px white;
+}
+#btn1:hover{
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 7px;
+    padding: 0.5rem;
+    background-color: #ea1414;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#buttonPlay{
+    vertical-align: middle;
+    border-style: none;
+    width: 26px;
+    height: 26px;
+}

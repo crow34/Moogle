@@ -1,0 +1,202 @@
+body{
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+#movie-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    color: white;
+}
+.background_image{
+    background-size :cover;
+    box-sizing :border-box;
+display: block;
+font-family : "Space Grotesk", sans-serif;
+font-size :16px;
+font-weight : 400;
+line-height: 24px;
+max-width: 100%;
+padding-top :80px;
+position: absolute;
+text-align :left;
+top :55px;
+width :100%;
+-webkit-tap-highlight-color :rgba(0, 0, 0, 0);
+box-shadow: 18rem 2rem 4rem #131111;
+    border-bottom: 2px solid #131111;
+}
+ 
+.background_image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 87%);
+    pointer-events: none;
+}
+
+.brightness{
+    position: relative;
+}
+figure{
+    display: flex;
+    object-fit: cover;
+    position: inherit;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.movie_image{
+    border-radius: 0.8em;
+    margin-left: 11em;
+  display: flex;
+    object-fit: cover;
+    height: 28em;
+  
+}
+
+.heading{
+    margin-top: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 0px;
+}
+.movie_detail{
+    margin-left: 2rem;
+}
+.spancontent{
+    
+    line-height: 2;
+}
+.movierating{
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-left: 2rem;
+}
+.movie_length{
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1.3em;
+
+}
+.movie_releasedate{
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 1px solid wheat;
+    border-radius: 2px;
+}
+.genre{
+    
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.overview{
+    font-size: 1em;
+    line-height: 1.7;
+    font-family: sans-serif;
+ 
+}
+/*Related Movies Content*/
+.RelatedMovies{
+  margin-left: 6rem;
+}
+.movies_content{
+    display: flex;
+    gap: 0.6rem;
+    overflow-x: scroll;
+    margin-left: 9rem;
+}
+#actor_span{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+#Director_span{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/*Movies Recommendation*/
+ .movie_img_detail{
+        height: 21rem;
+        object-fit: cover;
+        margin: auto;
+        border-radius: 0.5rem;
+    }
+ .movie_img_detail:hover{
+    filter: brightness(0.4);
+    }
+    #movies_content{
+        display: flex;
+        margin-left: 3rem;
+        gap: 5px;
+        overflow-x: scroll;
+        margin-top: 0rem;
+   
+    }
+ 
+ 
+ 
+    #movies_content::-webkit-scrollbar{
+       border-radius: 1rem;
+        overflow-x: scroll;
+        background-color: rgb(39, 30, 30);
+        height: 12px;
+        
+   
+    }
+    
+    .box-title{
+        border-left: 3px solid var(--darkreader-border--purple);
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .rating_date{
+        text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    
+    }
+    .voting{
+        font-size: 18px;
+    font-weight: bold;
+    }
+    .release_date{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        border: 2px solid black;
+        width: 40px;
+        font-weight: bold;
+        color: white;
+        background: #142019;
+        border-radius: 5px;
+        height: 20px;
+        border-top-left-radius: 0px;
+        font-family: cursive;
+        margin-top: 0.7rem;
+        margin-left: 0.7em;
+        align-items: center;
+        font-size: 15px;
+    }
+    #title{
+        top: -1rem;
+        position: relative;
+        margin-top: 10rem;
+        margin-left: 3rem;
+    }
+  

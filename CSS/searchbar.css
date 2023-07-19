@@ -1,0 +1,65 @@
+#search_image{
+    border-radius: 0.8em;
+    display: flex;
+    object-fit: cover;
+    height: 18em;
+}
+#search_image:hover{
+    filter: brightness(0.6);
+}
+#result_detail{
+
+   margin-top: 5rem;
+    margin-left: 5px;
+    
+}
+#search_result{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+#search_title{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.6em;
+    font-size: 17px;
+}
+.search_detail{
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+#release_date{
+    border: 1px solid rgb(135, 135, 187);
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 14px;
+}
+#rating{
+    font-size: 15px;
+    font-weight: bold;
+}
+#noResult{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: math;
+    color: red;
+}
+#showingResult{
+    font-size: 1.9rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: gray;
+    display: flex;
+    margin-left: 1rem;
+    text-transform: capitalize;
+    color: white;
+}
